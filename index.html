@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>CM Informática</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,15 +23,32 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+      var aux="a1";
+      var auxM="b1"
+      function Hide(x,y){
+        document.getElementById(aux).classList.add('oculto');
+        document.getElementById(x).classList.remove('oculto');
+        aux=x;
+        document.getElementById(auxM).classList.remove('red');
+        document.getElementById(y).classList.add('red');
+        auxM=y;
+      }
+      function Red(x){
 
+      }
+
+
+    </script>
   </head>
 
-  <body id="page-top">
+  <body id="page-top" background="img/pc.png">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">C&M Informática</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="cm.png"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,13 +73,12 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>La empresa de confianza para tu negocio.</strong>
+              <strong>Software de confianza para tu negocio.</strong>
             </h1>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Somos una empresa dedicada al desarrollo de software para la gestión de datos de negocios, contamos con muchos años de experiencia.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
           </div>
         </div>
       </div>
@@ -72,153 +88,222 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Servicios</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 text-center">
+        <div class="row tab">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+              <h4 class="mb-3 mh red" id="b1" onclick="Hide('a1','b1')">Perito informático</h4>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+              <h4 class="mb-3 mh" id="b2" onclick="Hide('a2','b2')">Software de Logística y Distribución</h4>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+              <h4 class="mb-3 mh"  id="b3" onclick="Hide('a3','b3')">Software para Ventas Minoristas</h4>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+              <h4 class="mb-3 mh" id="b4"onclick="Hide('a4','b4')">Software para Resto - Bar</h4>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+              <h4 class="mb-3 mh" id="b5" onclick="Hide('a5','b5')">Software para Supermercados</h4>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+              <h4 class="mb-3 mh" id="b6" onclick="Hide('a6','b6')">Software para El Plan Nacional de Vacunacion</h4>
             </div>
           </div>
+        </div>
+        <div>
+          <section id="a1" class="serv">
+            Perito Informático
+
+El Perito informático es un perito judicial, que en su carácter de auxiliar de la justicia
+tiene como tarea primordial la de asesorar al juez respecto a temas relacionados con la
+informática. La función del perito informático consiste en el análisis de elementos
+informáticos, en busca de aquellos datos que puedan constituir una prueba o indicio útil
+para el litigio jurídico al que ha sido asignado.
+El perito informático debe poseer un perfil definitivamente técnico, siendo de vital
+importancia que el perito esté familiarizado con las técnicas de análisis y recuperación
+de datos. Como elemento adicional, el perito debe contar con amplios conocimientos
+legales que le permitan desarrollar su tarea sin que la misma sea descalificada o
+impugnada durante su presentación judicial.
+Las tareas a desarrollar por el perito informático no son distintas de la de otros peritos
+judiciales. Por lo tanto deberá recopilar la información que es puesta a su disposición,
+analizar la misma en busca de los datos que el juez le ha requerido y emitir un informe o
+dictámen en donde vuelque las conclusiones de la investigación realizada.
+
+Deberes del Perito Informático
+    <ul>
+      <li>Aceptar el cargo, presenciar la pericia junto a los peritos de oficio, presentar el informe.</li>
+      <li>Comparecer personalmente ante el Juez, cada vez que éste lo requiera, prestando asistencia al cliente hasta que la causa culmine.</li>
+      <li>Observar las reglas de lealtad, imparcialidad y buena fe.</li>
+      <li>Guardar el secreto profesional cuando el caso lo imponga.</li>
+      <li>Fundar sus opiniones técnicas, redactando el informe con la mayor claridad didáctica, precisión profesional y apego a las normas jurídicas.</li>
+      <li>No estar inhabilitado, en jurisdicción alguna, para el ejercicio de la profesión, por motivos de mal desempeño profesional</li>
+      <li>En los casos en que el cumplimiento de la tarea obligase al Perito a efectuar gastos necesarios y/o a percibir viáticos, se presentara un cálculo presupuestario y ponerlo a consideración del Cliente, quien resolverá al respecto.</li>
+    </ul>
+          </section>
+          <section class="oculto serv" id="a2">
+            Software de Logistica y Distribucion
+Software para Distribuidoras de Ventas Mayoristas.
+
+Desarrollado bajo plataforma .NET y Base de Datos SQL.
+El software para Distribuidoras de Ventas Mayorista fue desarrollado para
+satisfacer plena, y sencillamente, los requerimientos de los circuitos
+administrativos y comerciales de toda la empresa.
+Los principales Modulos operativos descriptos a continuación posibilitan
+registrar todas las actividades que el Rubro necesita.
+Posee una interface amigable e intuitiva al operador, Niveles de seguridad
+jerárquicos y un Modulo de Consultas en bloque o 3D que el propio usuario
+puede configurar.
+<ul>
+  <li>Pedidos</li>
+  <li>Pre Ventas</li>
+  <li>Ventas</li>
+  <li>Stock</li>
+  <li>Stock</li>
+  <li>Compras</li>
+  <li>Cuentas Corrientes Clientes</li>
+  <li>Cuentas Corrientes Poveedores</li>
+  <li>Caja y Bancos</li>
+  <li>Clientes y Proovedores</li>
+  <li>Comisiones por ventas / cobranzas</li>
+  <li>Rentabildiad</li>
+  <li>Facturacion Fiscal</li>
+  <li>Facturacion Preimpresa</li>
+  <li>Factura electrónica</li>
+  <li>Remitos</li>
+  <li>Libros de IVA (Compras y Ventas)</li>
+  <li>Retenciones - Percepciones</li>
+  <li>City Ventas</li>
+  <li>Impuestos por Provincia</li>
+  <li>Contabildiad por Conceptos</li>
+  <li>Estadisticas</li>
+  <li>Historico de Ventas / Compras</li>
+  <li>Consultas 3D o en Bloques</li>
+  <li>Ofertas</li>
+  <li>Produstos Combo</li>
+  <li>Ofertas especiales</li>
+  <li>Productos compuestos</li>
+  <li>Hoja de Rutas (Google Maps)</li>
+  <li>Comodatos</li>
+  <li>Despachos</li>
+  <li>Rendicion de Entregas</li>
+  <li>Backup automatico o Manual</li>
+</ul>
+
+Desarrollado para plataforma multiusuarios en redes Lan o multiusuarios
+en redes Wan.
+Esta herramienta tecnológica posibilita la integración de los circuitos,
+operación intuitiva y ágil, confidencialidad e información relevante al
+instante.
+</section>
+<section class="oculto" id="a3" class="serv">
+  Software para Empresas de Ventas Minoristas
+
+Desarrollado bajo plataforma .NET y Base de Datos SQL.
+El software para Empresas de Ventas Minoristas Realiza todas las
+actividades administrativo-Contables necesarias para cumplimentar los
+circuitos administrativos y comerciales de toda la empresa.
+Los principales Modulos operativos descriptos a continuación posibilitan
+registrar todas las actividades que el Rubro necesita.
+Posee una interface amigable e intuitiva al operador, Niveles de seguridad
+jerárquicos y un Modulo de Consultas en bloque o 3D que el propio usuario
+puede configurar.
+<ul>
+  <li>Pedidos</li>
+  <li>Ventas</li>
+  <li>Stock</li>
+  <li>Compras</li>
+  <li>Cuentas Corrientes Clientes</li>
+  <li>Cuentas Corrientes Proveedores</li>
+  <li>Caja y Bancos</li>
+  <li>Clientes y Proveedores</li>
+  <li>Comisiones por ventas / cobranzas</li>
+  <li>Rentabildiad</li>
+  <li>Facturacion Fiscal</li>
+  <li>Faturacion Preimpresa</li>
+  <li>Factura Electronica</li>
+  <li>Remitos</li>
+  <li>Libros de IBA (Compras y Ventas)</li>
+  <li>Retenciones - Percepciones</li>
+  <li>City Ventas</li>
+  <li>Contabilidad por Conceptos</li>
+  <li>Estadisticas</li>
+  <li>Historico de Ventas / Compras</li>
+  <li>Consultas 3d o en Bloques</li>
+</ul>
+Esta herramienta tecnológica posibilita la integración de los circuitos,
+operación intuitiva y ágil, confidencialidad e información relevante al
+instante.
+</section>
+<section class="oculto" id="a4">
+  Software para Resto - Bar
+
+Desarrollado bajo plataforma .NET y Base de Datos SQL.
+El software para Resto – Bar Permite organizar y controlar la atención de
+los Mozos en las mesas, Control de consumo por mesas, la atención de La
+Barra, la impresión de Comandas en la Cocina y el manejo del delivery.
+Realiza todas las actividades administrativos-Contables necesarias para
+cumplimentar los circuitos administrativos y comerciales de toda la
+empresa. Los principales Modulos operativos descriptos a continuación
+posibilitan registrar todas las actividades que el Rubro necesita.
+Posee una interface amigable e intuitiva al operador, Niveles de seguridad
+jerárquicos y un Modulo de Consultas en bloque o 3D que el propio usuario
+puede configurar.
+El Sistema posee ademas, como Modulo Optativo, la posibilidad de que
+cada Mozo puede realizar el pedido mediante una TABLET conectada
+inalmbricamente al Sistema central.
+<ul>
+  <li>Pedidos</li>
+  <li>Ventas</li>
+  <li>Stock de Productos Elaborados</li>
+  <li>Stock de Materias Primas</li>
+  <li>Compras</li>
+  <li>Cuentas Corrientes</li>
+  <li>Caja y Bancos</li>
+  <li>Clientes y Proveedores</li>
+  <li>Comisiones</li>
+  <li>Rentabilidad</li>
+  <li>Facturacdion Fiscal</li>
+  <li>Facturacion Electrionica</li>
+  <li>Remitos</li>
+  <li>Libros de IVA (Compras y Ventas)</li>
+  <li>Contabilidad por Conceptos</li>
+  <li>Estadisticas</li>
+  <li>Control de Mesas</li>
+  <li>Control de Mozos</li>
+  <li>Delivery</li>
+  <li>Turnos</li>
+  <li>Comandas de Comidas</li>
+  <li>Cierre X</li>
+  <li>Cierre Z</li>
+  <li>Modulo optativo para los Mozos con Tablet</li>
+</ul>
+El Sistema tiene una gran adaptabilidad a toda las Empresas dedicadas a la
+actividad Gastronomica.
+</section>
         </div>
       </div>
     </section>
 
     <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+      <div class="container-fluid p-0 map">
+        <h2>Clientes</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1WJG3Qbe88n1REMZwIKAwwlmED3qdF4Sk" width="640" height="480"></iframe>
       </div>
     </section>
 

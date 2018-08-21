@@ -1,0 +1,64 @@
+.mostrar {
+	display: block;
+}
+
+.oculto {
+	display: none;
+}
+
+.mh {
+	cursor: pointer;
+}
+
+.red {
+	color: #01DF01;
+}
+
+.map{
+	background: black;
+	text-align: center;
+	color:#f05f40;
+}
+
+#mainNav .navbar-brand{
+	color: #01DF01;
+}
+
+#mainNav.navbar-shrink .navbar-brand{
+	color: #01DF01;
+}
+
+#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
+	color: #01DF01;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{
+	color: #01DF01;
+}
+
+h1, h2, hr{
+	color: #01DF01;
+}
+hr{
+	border-color: #01DF01;
+}
+body{
+	background-color: #E0FFFF;
+}
+
+
+.serv {
+	background-color: white;
+	border-radius: 25px;
+	opacity: 0.86;
+	color: black;
+	padding: 10%;
+}
+
+
+.tab {
+	background-color: white;
+	border-radius: 15px;
+	opacity: 0.86;
+	padding: 3%;
+}
