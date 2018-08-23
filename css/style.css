@@ -62,6 +62,11 @@ body{
 	border-width: thin ;
 	color: black;
 	padding-bottom: 5%;
+	border: solid;
+	padding-left: 3%;
+	border-color: #01fe01;
+	border-top:none;
+	border-bottom: none;
 }
 
 
