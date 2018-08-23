@@ -35,9 +35,20 @@
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{
 	color: #01DF01;
 }
-
-h1, h2, hr{
+h1 {
+	letter-spacing: 3px;
+}
+h2, hr{
 	color: #01DF01;
+	border-color: #01DF01;
+}
+.pie{
+	border-radius: 2px;
+	opacity: 0.8;
+	padding-left: 0px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
 }
 hr{
 	border-color: #01DF01;
@@ -48,7 +59,6 @@ body{
 
 
 .serv {
-	background-color: white;
 	border-radius: 25px;
 	opacity: 0.86;
 	color: black;
@@ -61,4 +71,9 @@ body{
 	border-radius: 15px;
 	opacity: 0.86;
 	padding: 3%;
+}
+
+section {
+	padding-top: 20px;
+	padding-bottom: 0px;
 }
