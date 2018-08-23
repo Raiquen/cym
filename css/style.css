@@ -59,10 +59,9 @@ body{
 
 
 .serv {
-	border-radius: 25px;
-	opacity: 0.86;
+	border-width: thin ;
 	color: black;
-	padding: 10%;
+	padding-bottom: 5%;
 }
 
 
